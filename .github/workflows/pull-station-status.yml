@@ -1,10 +1,10 @@
-name: Pull citibike station status every two minutes
+name: Pull citibike station status every five minutes
 on:
   push:
     branches:
       - main
   schedule:
-    - cron: "*/2 * * * *"
+    - cron: "*/5 * * * *"
 jobs:
   get-data:
     runs-on: ubuntu-latest
